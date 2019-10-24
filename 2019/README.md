@@ -1,4 +1,4 @@
-# 2018CommitteeMeeting
+# 2019 Committee Meeting
 
 ## Committee Meeting progress report
 
@@ -12,7 +12,6 @@
 4. typset BibTeX
 
 5. typeset LaTeX
-
 
 
 Optional: can use pandoc to convert to .doc to send to PI to edit : 
