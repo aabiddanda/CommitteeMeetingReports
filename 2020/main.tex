@@ -1,3 +1,4 @@
+%!TEX TS-program = xelatex
 \documentclass[a4paper, 11pt]{article}
 \usepackage{comment} % enables the use of multi-line comments (\ifx \fi) 
 \usepackage{fullpage} % changes the margin
@@ -25,24 +26,46 @@
 HG Matriculated 2015 \hfill Date: 6/16/20 \\
 \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
 
-\large\textbf{\\Progress since last Committee Meeting - XXX}
+\large\textbf{\\Progress since last Committee Meeting - 11/4/19}
+
+\subsection*{Manuscripts in progress}
+\begin{itemize}
+		\item Preprint + submitted: \bibentry{Biddanda2020a}
+    \item First Draft: \bibentry{Biddanda2020b}
+    \item Paper outline: \bibentry{Biddanda2020c}
+\end{itemize}
+
+\section*{Since my last committee meeting:}
+
+ \textbf{AIM 1} Characterizing the geographic distribution of genetic variants in variant sets \\
+ \begin{itemize}
+   \item Updated results and submitted manuscript to \texttt{eLife}. (preprint up on \texttt{bioRxiv}).
+   \item Repository to reproduce figures has been generated
+ \end{itemize}
+ 
+ \noindent \textbf{AIM 2} Investigating the effects of serial sampling on two-locus coalescent properties and linkage disequilibrium\\
+  \begin{itemize}
+    \item Large focus has been on computing statistics from data
+    \item Draft manuscript completed with major results in place (will review in meeting)
+  \end{itemize}
+
+ \noindent \textbf{AIM 3} A population genetic history of the Kodava population\\
+  \begin{itemize}
+    \item Manuscript outline in place with data freeze generated 
+    \item 
+  \end{itemize}
+
+\newpage
 \subsection*{Awards}
 % Horizontal line after name; adjust line thickness by changing the '1pt'
 \begin{itemize}
     \item ASHG Reviewer's Choice Abstract Award  \hfill 2019 
     %\item Genetics and Regulation Training Grant \hfill 2015-2018
-\end{itemize} 
-
-\subsection*{Manuscripts in progress}
-\begin{itemize}
-    \item First Draft: \bibentry{Biddanda2019a} 
-		\item Preprint: \bibentry{Biddanda2019b}
 \end{itemize}
 
 \subsection*{Oral Presentations}
 \begin{itemize}
-	\item Midwest Population Genetics Meeting \hfill August 2019 \\ \emph{Linkage Disequilibrium and Haplotype Patterns in Ancient DNA}
-	\item Novembre-He-Stephens (NHS) Meeting \hfill June 2019 \\ \emph{Linkage Disequilibrium and Haplotype Patterns in Ancient DNA}   
+	\item Novembre-He-Stephens (NHS) Meeting \hfill June 2020\\ \emph{Linkage Disequilibrium and Haplotype Patterns in Ancient DNA}   
 \end{itemize}
 
 \subsection*{Posters}
@@ -65,35 +88,7 @@ HG Matriculated 2015 \hfill Date: 6/16/20 \\
 		Tutoring 6th grade students in STEM 	
 \end{itemize}
 
-% This is where most of the development + planning goes...
 \newpage
-
-\section*{Since my last committee meeting:}
-
- \textbf{AIM 1} Characterizing the geographic distribution of genetic variants in variant sets \\
- \begin{itemize}
-  \item Reimplemented original pipeline to compute georaphic distributions  
-  \item Organized relevant variant sets (Genotyping Arrays, Archaic Introgressed Variants)   
-  \item Reimplemented visualization methods in Python
-  \item Major push now is to further develop draft to preprint stage 
- \end{itemize}
-
- \textbf{AIM 2} Investigating the effects of serial sampling on two-locus coalescent properties and linkage disequilibrium\\
-  \begin{itemize}
-    \item Calculated two-locus coalescent properties under population continuity and population split models
-    \item Calculated expected correlation in heterozygosity as a function of time separation
-    \item Show both theoretical justification and simulation results for increase in haplotype copying model jump rates as a function of sample age with modern reference panel
-    \item Major push is to develop draft manuscript describing these theoretical ideas and emphasize implications for phasing, imputation of ancient DNA
-  \end{itemize}
-
-
- %\textbf{AIM 3} Utilizing haplotype-copying models to estimate sample age and generation time\\
-  %\begin{itemize}
-    %\item Developed estimator of sample age based on copying-tract length distribution
-    %\item Applied estimator to data simulated under the coalescent model with constant poulation size
-    %\item Major software implementation roadblock is to develop method to function on diploid data (revised hidden statespace)
-    %\item Major push now is to apply this to SNP-capture data from Reich Lab and using the 1000 genomes haplotype reference panel 
-%  \end{itemize}
 
 \bibliography{report2020}
 \bibliographystyle{apalike}
