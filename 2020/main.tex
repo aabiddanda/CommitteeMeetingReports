@@ -1,10 +1,11 @@
 %!TEX TS-program = xelatex
-\documentclass[a4paper, 11pt]{article}
+\documentclass[a4paper, 10.5pt]{article}
 \usepackage{comment} % enables the use of multi-line comments (\ifx \fi) 
 \usepackage{fullpage} % changes the margin
 \usepackage[margin=35pt]{geometry}
-\usepackage{graphicx}
-\usepackage{microtype} 
+\usepackage{graphicx, float, caption}
+\usepackage{microtype}
+\usepackage{hyperref}
 \usepackage{titlesec}
 \usepackage{color, colortbl}
 \usepackage[table]{xcolor} 
@@ -22,75 +23,62 @@
 
 \noindent
 \large\textbf{Committee Meeting Report} \hfill \textbf{Arjun Biddanda} \\
-\normalsize  \hfill Professor: John Novembre  \\
+\normalsize  \hfill PI: John Novembre  \\
 HG Matriculated 2015 \hfill Date: 6/16/20 \\
 \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
 
 \large\textbf{\\Progress since last Committee Meeting - 11/4/19}
 
+\subsection*{Major deadlines in 2020}
+\begin{itemize}
+    \item \textbf{Fall Dissertation Submission Deadline: 11/13/20}
+    \item \textbf{Target Dissertation Defense Date: 11/5/20}
+    \item Postdoc offer starting in early 2021 (at Oxford with Prof. Pier Palamara)
+\end{itemize}
+
 \subsection*{Manuscripts in progress}
 \begin{itemize}
 		\item Preprint + submitted: \bibentry{Biddanda2020a}
-    \item First Draft: \bibentry{Biddanda2020b}
-    \item Paper outline: \bibentry{Biddanda2020c}
+    \item Draft: \bibentry{Biddanda2020b}
+    \item Paper outline \& initial draft: \bibentry{Biddanda2020c}
 \end{itemize}
 
-\section*{Since my last committee meeting:}
-
- \textbf{AIM 1} Characterizing the geographic distribution of genetic variants in variant sets \\
+\section*{Dissertation progress since my last committee meeting:}
+ \textbf{AIM 1:} Characterizing the geographic distribution of genetic variants in variant sets \\
  \begin{itemize}
-   \item Updated results and submitted manuscript to \texttt{eLife}. (preprint up on \texttt{bioRxiv}).
-   \item Repository to reproduce figures has been generated
+   \item Updated results and submitted manuscript to \texttt{eLife}. (preprint on \texttt{bioRxiv}).
+   \item Repository to reproduce figures has been generated and can be found \href{https://github.com/aabiddanda/geovar\_rep\_paper}{here}
  \end{itemize}
  
- \noindent \textbf{AIM 2} Investigating the effects of serial sampling on two-locus coalescent properties and linkage disequilibrium\\
+ \noindent \textbf{AIM 2:} Investigating the effects of serial sampling on two-locus coalescent properties and linkage disequilibrium\\
   \begin{itemize}
-    \item Large focus has been on computing statistics from data
-    \item Draft manuscript completed with major results in place (will review in meeting)
+    \item Theory developed largely in two contexts: (1) two-locus genealogies and (2) haplotype-copying models with serial sampling 
+    \item Recent focus has been on computing statistics predicted by theory from the data and adding as figures into the manuscript 
+    \item Draft is at v0.5 stage with theoretical results in place and sections reserved for data analysis 
   \end{itemize}
 
- \noindent \textbf{AIM 3} A population genetic history of the Kodava population\\
+ \noindent \textbf{AIM 3:} A population genetic history of the Kodava population\\
   \begin{itemize}
-    \item Manuscript outline in place with data freeze generated 
-    \item 
-  \end{itemize}
-
-\newpage
-\subsection*{Awards}
-% Horizontal line after name; adjust line thickness by changing the '1pt'
-\begin{itemize}
-    \item ASHG Reviewer's Choice Abstract Award  \hfill 2019 
-    %\item Genetics and Regulation Training Grant \hfill 2015-2018
-\end{itemize}
-
-\subsection*{Oral Presentations}
-\begin{itemize}
-	\item Novembre-He-Stephens (NHS) Meeting \hfill June 2020\\ \emph{Linkage Disequilibrium and Haplotype Patterns in Ancient DNA}   
-\end{itemize}
-
-\subsection*{Posters}
-\begin{itemize}
-	 \item Biddanda A, Steinr\"{u}cken M, Novembre J. Linkage Disequilibrium and Haplotype Patterns in Ancient DNA : Theory + Applications. Poster presented at American Society of Human Genetics 2019
-	 \item Biddanda A, Novembre J. Inference and visualization of the geographic distribution for variant sets. Poster presented at American Society of Human Genetics 2018 
-\end{itemize}
-
-\subsection*{Teaching Assistantship Requirements Completed}
-\begin{itemize}
-	\item HGEN 48600 \emph{Fundamentals of Computational Biology: Models and Inference} \hfill Winter 2018\\
-	\item HGEN 46900 \emph{Human Variation and Disease} \hfill Spring 2017\\
-\end{itemize}
-
-\subsection*{Extracurricular}
-\begin{itemize}
-	\item  Polsky Center: Spark Fellow \hfill Summer 2019 \\
-		Performed due-diligence and market analysis for projects applying for \$10-\$50k through Polsky for early stage funding to expand business opportunities  
-	\item  Tutoring Chicago:  \hfill Fall 2019 -  \\
-		Tutoring 6th grade students in STEM 	
-\end{itemize}
-
-\newpage
+    \item Data freeze generated from $N = 90$ Kodava individuals from North-America (WGS data (Average coverage : $\sim 5\text{x}$))
+    \item Major questions related to ancestry:
+      \begin{enumerate}
+        \item Do the Kodava have a higher proportion of Ancestral North Indian (ANI) ancestry relative to nearby South Indian populations?
+        \item Are the best proxies for regional admixture consistent with Kodava oral history?
+        \item Is there potential signal of actionable disease variation relevant to other South Indian populations? 
+ \end{enumerate}
+    \item From PCA / STRUCTURE there is little evidence that the Kodava harbor substantially higher ANI ancestry (supported by more formal $f_3/f_4$-tests as well)
+    \item Analyses planned to explore identity-by-descent within the community and runs-of-homozygosity as well. 
+ \end{itemize}
 
 \bibliography{report2020}
-\bibliographystyle{apalike}
+\bibliographystyle{plain}
+
+\vspace*{2em}
+\begin{figure}[H]
+  \centering
+  \includegraphics{phd-timeline.pdf}
+  \caption*{Proposed time-allocation for next months}
+\end{figure}
+
 
 \end{document}
